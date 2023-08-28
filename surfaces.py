@@ -1,61 +1,67 @@
 import pygame
+import os
 
 '''IMPORT SURFACES'''
 
+base_path = os.path.dirname(__file__)
+
+def loadImage(path):
+    return pygame.image.load(base_path + '\\' + path)
+
 # background
-IMG_TtCp = pygame.image.load('Assets/images/bg/title_caption.png')
-IMG_IgBg = pygame.image.load('Assets/images/bg/activebackground.png')
+IMG_TtCp = loadImage('Assets\\images\\bg\\title_caption.png')
+IMG_IgBg = loadImage('Assets\\images\\bg\\activebackground.png')
 
 # menu
-IMG_HmMnD = pygame.image.load('Assets/images/menu/dim.png')
-IMG_HmMnF = pygame.image.load('Assets/images/menu/full.png')
-IMG_HmMnB = pygame.image.load('Assets/images/menu/base.png')
-IMG_HmMnO = pygame.image.load('Assets/images/menu/O.png')
-IMG_HmMnE = pygame.image.load('Assets/images/menu/E.png')
-IMG_HmMnH = pygame.image.load('Assets/images/menu/H.png')
-IMG_HmMnCn = pygame.image.load('Assets/images/menu/chain.png')
+IMG_HmMnD = loadImage('Assets\\images\\menu\\dim.png')
+IMG_HmMnF = loadImage('Assets\\images\\menu\\full.png')
+IMG_HmMnB = loadImage('Assets\\images\\menu\\base.png')
+IMG_HmMnO = loadImage('Assets\\images\\menu\\O.png')
+IMG_HmMnE = loadImage('Assets\\images\\menu\\E.png')
+IMG_HmMnH = loadImage('Assets\\images\\menu\\H.png')
+IMG_HmMnCn = loadImage('Assets\\images\\menu\\chain.png')
 
-IMG_HmMnSU = pygame.image.load('Assets/images/menu/buttonUP.png')
-IMG_HmMnSD = pygame.image.load('Assets/images/menu/buttonDOWN.png')
-IMG_HmMnSO = pygame.image.load('Assets/images/menu/buttonDISABLED.png')
+IMG_HmMnSU = loadImage('Assets\\images\\menu\\buttonUP.png')
+IMG_HmMnSD = loadImage('Assets\\images\\menu\\buttonDOWN.png')
+IMG_HmMnSO = loadImage('Assets\\images\\menu\\buttonDISABLED.png')
 
-IMG_HmMnScOF = pygame.image.load('Assets/images/menu/screen/off.png')
-IMG_HmMnScON = pygame.image.load('Assets/images/menu/screen/on.png')
-IMG_HmMnScUP = pygame.image.load('Assets/images/menu/screen/up.png')
-IMG_HmMnScDN = pygame.image.load('Assets/images/menu/screen/down.png')
-IMG_HmMnSc1 = pygame.image.load('Assets/images/menu/screen/1.png')
-IMG_HmMnSc2 = pygame.image.load('Assets/images/menu/screen/2.png')
-IMG_HmMnSc3 = pygame.image.load('Assets/images/menu/screen/3.png')
-IMG_HmMnSc4 = pygame.image.load('Assets/images/menu/screen/4.png')
-IMG_HmMnSc5 = pygame.image.load('Assets/images/menu/screen/5.png')
-IMG_HmMnSc6 = pygame.image.load('Assets/images/menu/screen/6.png')
-IMG_HmMnSc7 = pygame.image.load('Assets/images/menu/screen/7.png')
+IMG_HmMnScOF = loadImage('Assets\\images\\menu\\screen\\off.png')
+IMG_HmMnScON = loadImage('Assets\\images\\menu\\screen\\on.png')
+IMG_HmMnScUP = loadImage('Assets\\images\\menu\\screen\\up.png')
+IMG_HmMnScDN = loadImage('Assets\\images\\menu\\screen\\down.png')
+IMG_HmMnSc1 = loadImage('Assets\\images\\menu\\screen\\1.png')
+IMG_HmMnSc2 = loadImage('Assets\\images\\menu\\screen\\2.png')
+IMG_HmMnSc3 = loadImage('Assets\\images\\menu\\screen\\3.png')
+IMG_HmMnSc4 = loadImage('Assets\\images\\menu\\screen\\4.png')
+IMG_HmMnSc5 = loadImage('Assets\\images\\menu\\screen\\5.png')
+IMG_HmMnSc6 = loadImage('Assets\\images\\menu\\screen\\6.png')
+IMG_HmMnSc7 = loadImage('Assets\\images\\menu\\screen\\7.png')
 
 
 # assets
-IMG_IgIn = pygame.image.load('Assets/images/indacator.png')
-IMG_IgInA = pygame.image.load('Assets/images/indacator_ACTIVE.png')
+IMG_IgIn = loadImage('Assets\\images\\indacator.png')
+IMG_IgInA = loadImage('Assets\\images\\indacator_ACTIVE.png')
 
 # buttons
-IMG_IgBtHm = pygame.image.load('Assets/images/home.png')
-IMG_IgBtRs = pygame.image.load('Assets/images/reset.png')
-IMG_IgBtAd = pygame.image.load('Assets/images/add.png')
-IMG_IgBtMn = pygame.image.load('Assets/images/minus.png')
-IMG_IgBtHi = pygame.image.load('Assets/images/hint.png')
-IMG_IgBtHmA = pygame.image.load('Assets/images/home_ACTIVE.png')
-IMG_IgBtRsA = pygame.image.load('Assets/images/reset_ACTIVE.png')
-IMG_IgBtAdA = pygame.image.load('Assets/images/add_ACTIVE.png')
-IMG_IgBtMnA = pygame.image.load('Assets/images/minus_ACTIVE.png')
-IMG_IgBtHiA = pygame.image.load('Assets/images/hint_ACTIVE.png')
+IMG_IgBtHm = loadImage('Assets\\images\\home.png')
+IMG_IgBtRs = loadImage('Assets\\images\\reset.png')
+IMG_IgBtAd = loadImage('Assets\\images\\add.png')
+IMG_IgBtMn = loadImage('Assets\\images\\minus.png')
+IMG_IgBtHi = loadImage('Assets\\images\\hint.png')
+IMG_IgBtHmA = loadImage('Assets\\images\\home_ACTIVE.png')
+IMG_IgBtRsA = loadImage('Assets\\images\\reset_ACTIVE.png')
+IMG_IgBtAdA = loadImage('Assets\\images\\add_ACTIVE.png')
+IMG_IgBtMnA = loadImage('Assets\\images\\minus_ACTIVE.png')
+IMG_IgBtHiA = loadImage('Assets\\images\\hint_ACTIVE.png')
 
 # chips
-c7 = pygame.image.load('Assets/images/chips/red.png')
-c6 = pygame.image.load('Assets/images/chips/orange.png')
-c5 = pygame.image.load('Assets/images/chips/yellow.png')
-c4 = pygame.image.load('Assets/images/chips/green.png')
-c3 = pygame.image.load('Assets/images/chips/light_blue.png')
-c2 = pygame.image.load('Assets/images/chips/blue.png')
-c1 = pygame.image.load('Assets/images/chips/purple.png')
+c7 = loadImage('Assets\\images\\chips\\red.png')
+c6 = loadImage('Assets\\images\\chips\\orange.png')
+c5 = loadImage('Assets\\images\\chips\\yellow.png')
+c4 = loadImage('Assets\\images\\chips\\green.png')
+c3 = loadImage('Assets\\images\\chips\\light_blue.png')
+c2 = loadImage('Assets\\images\\chips\\blue.png')
+c1 = loadImage('Assets\\images\\chips\\purple.png')
 ORDER = [c1, c2, c3, c4, c5, c6, c7]
 
 '''RESIZE SURFACES'''
